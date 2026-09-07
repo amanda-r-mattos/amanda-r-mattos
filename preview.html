@@ -16,7 +16,7 @@
       justify-content: center;
     }
     .container {
-      max-width: 880px;
+      max-width: 940px;
       width: 100%;
       background: #0d1117;
       border: 1px solid #30363d;
@@ -46,16 +46,14 @@
       background-color: transparent !important;
       color: #c9d1d9 !important;
     }
-    .markdown-body hr {
-      background-color: #30363d;
-      height: 1px;
-    }
     .markdown-body details {
       background-color: #161b22;
       border: 1px solid #30363d;
       border-radius: 8px;
       padding: 12px 16px;
-      margin: 10px 0;
+      margin: 10px auto;
+      max-width: 750px;
+      text-align: left;
       cursor: pointer;
     }
     .markdown-body summary {
@@ -63,14 +61,13 @@
       user-select: none;
     }
     .markdown-body table {
-      display: inline-table;
+      width: 100%;
       border-collapse: collapse;
-      border: none;
+      margin-top: 10px;
     }
     .markdown-body td, .markdown-body th {
-      border: none !important;
-      background: transparent !important;
-      padding: 6px 12px;
+      border: 1px solid #30363d !important;
+      padding: 8px 12px;
     }
     .markdown-body img {
       max-width: 100%;
@@ -83,57 +80,267 @@
       <span class="dot dot-red"></span>
       <span class="dot dot-yellow"></span>
       <span class="dot dot-green"></span>
-      <span style="margin-left: 10px; font-weight: 600;">amanda-r-mattos / README.md (GitHub Profile Preview)</span>
+      <span style="margin-left: 10px; font-weight: 600;">amanda-r-mattos</span>
     </div>
 
     <article class="markdown-body">
       <div align="center">
-        <!-- Header Banner -->
-        <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:fbc2eb,50:a6c1ee,100:fbc2eb&height=200&section=header&text=✨%20Hi,%20I'm%20Amanda!%20🌸&fontSize=42&fontAlignY=38&animation=fadeIn&fontColor=ffffff" width="100%" />
+        <!-- Contador de Visitas Estilizado -->
+        <img src="https://komarev.com/ghpvc/?username=amanda-r-mattos&label=VISITAS&color=f472b6&style=flat-square" alt="Visualizações do perfil" />
 
+        <br><br>
+
+        <!-- Painel Principal SVG Animado (Embutido para Preview Instantâneo) -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 900 1180" role="img" aria-labelledby="title desc">
+        <title id="title">Perfil GitHub de Amanda Mattos</title>
+        <desc id="desc">Painel animado com tecnologias, inteligência artificial, automação e projetos.</desc>
+        <style>
+          text {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          }
+          .eyebrow { font-size: 12px; font-weight: 800; letter-spacing: 5px; fill: #f472b6; }
+          .name { font-size: 58px; font-weight: 900; letter-spacing: 3px; fill: #ffffff; }
+          .role { font-size: 15px; font-weight: 800; letter-spacing: 4px; fill: #c084fc; }
+          .bio { font-size: 13.5px; font-weight: 500; fill: #cbd5e1; }
+          .muted { font-size: 10px; font-weight: 700; letter-spacing: 2px; fill: #94a3b8; }
+          
+          .section-title { font-size: 12px; font-weight: 900; letter-spacing: 3.5px; fill: #f472b6; }
+          
+          .chip { fill: #1e1b4b; fill-opacity: 0.75; stroke-width: 1.2; stroke-opacity: 0.8; }
+          .chipText { font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+          
+          .panel { fill: #131127; fill-opacity: 0.9; stroke: #2e2854; stroke-width: 1.5; }
+          .panel-highlight { fill: #181530; stroke: #433878; }
+          
+          .card-title { font-size: 15px; font-weight: 800; fill: #fdf2f8; }
+          .card-desc { font-size: 11px; font-weight: 500; fill: #94a3b8; line-height: 1.4; }
+          .card-tag { font-size: 9px; font-weight: 800; fill: #f472b6; letter-spacing: 1.5px; }
+          
+          .stat-num { font-size: 26px; font-weight: 900; fill: #ffffff; }
+          .stat-label { font-size: 9px; font-weight: 800; letter-spacing: 1.5px; fill: #cbd5e1; }
+          
+          /* Animações Cute & Suaves */
+          .orbA { animation: floatOrbA 10s ease-in-out infinite; }
+          .orbB { animation: floatOrbB 12s ease-in-out infinite; }
+          .orbC { animation: floatOrbC 9s ease-in-out infinite; }
+          .pulse { animation: pulseGlow 2.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+          .scan { animation: scanline 6s linear infinite; }
+          .sparkle { animation: sparkleTwinkle 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+
+          @keyframes floatOrbA {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -15px) scale(1.1); }
+          }
+          @keyframes floatOrbB {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-35px, 20px) scale(1.08); }
+          }
+          @keyframes floatOrbC {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(20px, 25px); }
+          }
+          @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); opacity: 0.85; }
+            50% { transform: scale(1.45); opacity: 1; }
+          }
+          @keyframes scanline {
+            0% { transform: translateX(-400px); }
+            100% { transform: translateX(1100px); }
+          }
+          @keyframes sparkleTwinkle {
+            0%, 100% { opacity: 0.3; transform: scale(0.8) rotate(0deg); }
+            50% { opacity: 1; transform: scale(1.2) rotate(45deg); }
+          }
+
+          @media (prefers-reduced-motion: reduce) {
+            * { animation: none !important; }
+          }
+        </style>
+
+        <defs>
+          <radialGradient id="gradPink"><stop stop-color="#ec4899" stop-opacity="0.5"/><stop offset="1" stop-color="#ec4899" stop-opacity="0"/></radialGradient>
+          <radialGradient id="gradPurple"><stop stop-color="#8b5cf6" stop-opacity="0.45"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+          <radialGradient id="gradCyan"><stop stop-color="#06b6d4" stop-opacity="0.35"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0"/></radialGradient>
+          
+          <linearGradient id="scanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#f472b6" stop-opacity="0"/>
+            <stop offset="50%" stop-color="#c084fc" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+          </linearGradient>
+
+          <pattern id="cuteGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M40 0H0V40" fill="none" stroke="#6366f1" stroke-opacity="0.08" stroke-width="1"/>
+            <circle cx="40" cy="40" r="1" fill="#f472b6" fill-opacity="0.25"/>
+          </pattern>
+        </defs>
+
+        <rect width="900" height="1180" rx="28" fill="#0c0a18"/>
+        <rect x="2" y="2" width="896" height="1176" rx="26" fill="url(#cuteGrid)" stroke="#312e81" stroke-opacity="0.6"/>
+
+        <ellipse class="orbA" cx="220" cy="140" rx="260" ry="160" fill="url(#gradPink)"/>
+        <ellipse class="orbB" cx="700" cy="170" rx="250" ry="150" fill="url(#gradPurple)"/>
+        <ellipse class="orbC" cx="450" cy="420" rx="280" ry="160" fill="url(#gradCyan)"/>
+
+        <rect class="scan" x="-300" y="110" width="300" height="48" fill="url(#scanGradient)"/>
+
+        <g class="sparkle" style="transform-origin: 120px 80px;">
+          <path d="M120 70 L122 78 L130 80 L122 82 L120 90 L118 82 L110 80 L118 78 Z" fill="#fbcfe8"/>
+        </g>
+        <g class="sparkle" style="transform-origin: 780px 90px; animation-delay: 1.5s;">
+          <path d="M780 80 L782 88 L790 90 L782 92 L780 100 L778 92 L770 90 L778 88 Z" fill="#e9d5ff"/>
+        </g>
+        <g class="sparkle" style="transform-origin: 820px 280px; animation-delay: 0.8s;">
+          <path d="M820 272 L821.5 278 L828 280 L821.5 282 L820 288 L818.5 282 L812 280 L818.5 278 Z" fill="#fbcfe8"/>
+        </g>
+
+        <!-- HEADER SECTION -->
+        <text x="450" y="65" text-anchor="middle" class="eyebrow">✨ AI AGENTS • FULLSTACK • AUTOMATION 🌸</text>
+        <text x="450" y="135" text-anchor="middle" class="name">AMANDA MATTOS</text>
+        <text x="450" y="172" text-anchor="middle" class="role">SOFTWARE DEVELOPER &amp; AI BUILDER</text>
+        <text x="450" y="206" text-anchor="middle" class="bio">Criando soluções elegantes, fluxos inteligentes e interfaces memoráveis com código limpo.</text>
+        <text x="450" y="232" text-anchor="middle" class="muted">☕ COZY WORKSPACE  •  github.com/amanda-r-mattos  •  LO-FI VIBES 🐾</text>
+
+        <!-- TECH CHIPS -->
+        <g transform="translate(45, 265)">
+          <g><rect x="0" y="0" width="85" height="30" rx="15" class="chip" stroke="#ec4899"/><text x="42.5" y="19" text-anchor="middle" class="chipText" fill="#f472b6">PYTHON</text></g>
+          <g><rect x="95" y="0" width="85" height="30" rx="15" class="chip" stroke="#8b5cf6"/><text x="137.5" y="19" text-anchor="middle" class="chipText" fill="#c084fc">N8N</text></g>
+          <g><rect x="190" y="0" width="115" height="30" rx="15" class="chip" stroke="#ec4899"/><text x="247.5" y="19" text-anchor="middle" class="chipText" fill="#f472b6">AGENTES IA</text></g>
+          <g><rect x="315" y="0" width="75" height="30" rx="15" class="chip" stroke="#06b6d4"/><text x="352.5" y="19" text-anchor="middle" class="chipText" fill="#38bdf8">C++</text></g>
+          <g><rect x="400" y="0" width="95" height="30" rx="15" class="chip" stroke="#eab308"/><text x="447.5" y="19" text-anchor="middle" class="chipText" fill="#facc15">JAVASCRIPT</text></g>
+          <g><rect x="505" y="0" width="95" height="30" rx="15" class="chip" stroke="#3b82f6"/><text x="552.5" y="19" text-anchor="middle" class="chipText" fill="#60a5fa">TYPESCRIPT</text></g>
+          <g><rect x="610" y="0" width="95" height="30" rx="15" class="chip" stroke="#f97316"/><text x="657.5" y="19" text-anchor="middle" class="chipText" fill="#fb923c">HTML5 / CSS</text></g>
+          <g><rect x="715" y="0" width="95" height="30" rx="15" class="chip" stroke="#10b981"/><text x="762.5" y="19" text-anchor="middle" class="chipText" fill="#34d399">SUPABASE</text></g>
+        </g>
+
+        <line x1="45" y1="318" x2="855" y2="318" stroke="#2e2854" stroke-width="1.2"/>
+
+        <!-- STATUS CARDS -->
+        <g transform="translate(45, 335)">
+          <g transform="translate(0, 0)">
+            <rect width="190" height="98" rx="16" class="panel"/>
+            <circle cx="24" cy="26" r="4.5" fill="#f472b6" class="pulse"/>
+            <text x="36" y="29" class="stat-label" fill="#f472b6">FOCO ATUAL</text>
+            <text x="20" y="65" class="card-title">Fullstack &amp; IA</text>
+            <text x="20" y="83" class="card-desc">Automação &amp; Web Apps</text>
+          </g>
+          <g transform="translate(206, 0)">
+            <rect width="190" height="98" rx="16" class="panel"/>
+            <circle cx="24" cy="26" r="4.5" fill="#c084fc" class="pulse"/>
+            <text x="36" y="29" class="stat-label" fill="#c084fc">WORKFLOWS</text>
+            <text x="20" y="65" class="card-title">N8N + Python</text>
+            <text x="20" y="83" class="card-desc">Agentes Inteligentes</text>
+          </g>
+          <g transform="translate(412, 0)">
+            <rect width="190" height="98" rx="16" class="panel"/>
+            <circle cx="24" cy="26" r="4.5" fill="#38bdf8" class="pulse"/>
+            <text x="36" y="29" class="stat-label" fill="#38bdf8">DATABASE &amp; BAAS</text>
+            <text x="20" y="65" class="card-title">Supabase &amp; SQL</text>
+            <text x="20" y="83" class="card-desc">PostgreSQL &amp; APIs</text>
+          </g>
+          <g transform="translate(618, 0)">
+            <rect width="192" height="98" rx="16" class="panel"/>
+            <circle cx="24" cy="26" r="4.5" fill="#34d399" class="pulse"/>
+            <text x="36" y="29" class="stat-label" fill="#34d399">UI/UX &amp; DESIGN</text>
+            <text x="20" y="65" class="card-title">Figma &amp; Framer</text>
+            <text x="20" y="83" class="card-desc">Cute &amp; Clean Design</text>
+          </g>
+        </g>
+
+        <!-- PILARES -->
+        <text x="45" y="475" class="section-title">🌸 PILARES DE DESENVOLVIMENTO &amp; EXPERTISE</text>
+
+        <g transform="translate(45, 495)">
+          <rect width="810" height="110" rx="18" class="panel panel-highlight"/>
+          <rect x="18" y="18" width="40" height="40" rx="12" fill="#ec4899" fill-opacity="0.2" stroke="#ec4899" stroke-width="1.2"/>
+          <text x="38" y="44" text-anchor="middle" font-size="20">🤖</text>
+          <text x="75" y="38" class="card-title">Inteligência Artificial &amp; Automação de Processos</text>
+          <text x="75" y="55" class="card-tag">N8N • PYTHON AGENTS • LLMS • OPENAI • GEMINI</text>
+          <text x="75" y="78" class="card-desc">Construção de pipelines autônomos, integrações via Webhooks e bots com processamento de linguagem natural.</text>
+          <text x="75" y="96" class="card-desc" fill="#c084fc">✨ Foco em produtividade, automação de tarefas e arquitetura escalável.</text>
+        </g>
+
+        <g transform="translate(45, 620)">
+          <rect width="810" height="110" rx="18" class="panel panel-highlight"/>
+          <rect x="18" y="18" width="40" height="40" rx="12" fill="#8b5cf6" fill-opacity="0.2" stroke="#8b5cf6" stroke-width="1.2"/>
+          <text x="38" y="44" text-anchor="middle" font-size="20">💻</text>
+          <text x="75" y="38" class="card-title">Desenvolvimento Frontend Moderno &amp; Design</text>
+          <text x="75" y="55" class="card-tag">REACT • NEXT.JS • TYPESCRIPT • FIGMA • FRAMER</text>
+          <text x="75" y="78" class="card-desc">Criação de interfaces web responsivas, intuitivas e esteticamente refinadas com componentes reutilizáveis.</text>
+          <text x="75" y="96" class="card-desc" fill="#f472b6">🌸 Atenção aos detalhes, micro-interações, acessibilidade e harmonia de cores.</text>
+        </g>
+
+        <g transform="translate(45, 745)">
+          <rect width="810" height="110" rx="18" class="panel panel-highlight"/>
+          <rect x="18" y="18" width="40" height="40" rx="12" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="1.2"/>
+          <text x="38" y="44" text-anchor="middle" font-size="20">⚙️</text>
+          <text x="75" y="38" class="card-title">Backend, Banco de Dados &amp; Integrações</text>
+          <text x="75" y="55" class="card-tag">NODE.JS • EXPRESS • SUPABASE • POSTGRESQL • DOCKER • POSTMAN</text>
+          <text x="75" y="78" class="card-desc">Desenvolvimento de APIs RESTful, gerenciamento de banco de dados relacional e serviços em nuvem.</text>
+          <text x="75" y="96" class="card-desc" fill="#38bdf8">🚀 Estruturas robustas, seguras e prontas para integração contínua.</text>
+        </g>
+
+        <!-- WORKSPACE -->
+        <text x="45" y="895" class="section-title">🍵 COZY ENVIRONMENT &amp; FERRAMENTAS FAVORITAS</text>
+
+        <g transform="translate(45, 915)">
+          <g transform="translate(0, 0)">
+            <rect width="258" height="85" rx="16" class="panel"/>
+            <text x="20" y="35" class="card-title">🎨 IDE &amp; Workspace</text>
+            <text x="20" y="56" class="card-desc">VS Code • Antigravity</text>
+            <text x="20" y="72" class="card-desc" fill="#f472b6">PowerShell ✨ • Dark Cute Theme</text>
+          </g>
+          <g transform="translate(276, 0)">
+            <rect width="258" height="85" rx="16" class="panel"/>
+            <text x="20" y="35" class="card-title">💡 Design &amp; Criação</text>
+            <text x="20" y="56" class="card-desc">Figma • Canva • Framer</text>
+            <text x="20" y="72" class="card-desc" fill="#c084fc">Paletas Pastel &amp; Prototipagem</text>
+          </g>
+          <g transform="translate(552, 0)">
+            <rect width="258" height="85" rx="16" class="panel"/>
+            <text x="20" y="35" class="card-title">📚 Organização &amp; Foco</text>
+            <text x="20" y="56" class="card-desc">Notion • Obsidian • Spotify</text>
+            <text x="20" y="72" class="card-desc" fill="#34d399">Lo-Fi Beats &amp; Warm Coffee ☕</text>
+          </g>
+        </g>
+
+        <!-- FOOTER -->
+        <g transform="translate(45, 1030)">
+          <rect width="810" height="90" rx="18" fill="#181432" stroke="#37306b" stroke-width="1.2"/>
+          <circle cx="45" cy="45" r="18" fill="#ec4899" fill-opacity="0.2"/>
+          <text x="45" y="52" text-anchor="middle" font-size="18">💌</text>
+          <text x="80" y="40" class="card-title">Sempre aberta a colaborações, novos projetos e conexões!</text>
+          <text x="80" y="62" class="card-desc">Entre em contato para conversarmos sobre tecnologia, desenvolvimento ou automação com IA ₍ᐢ.ˬ.⑅ᐢ₎</text>
+        </g>
+
+        <text x="450" y="1155" text-anchor="middle" font-size="11" font-weight="600" fill="#94a3b8">⋆｡°✩ Feito com carinho, café e código 🌸 ✨ ✩°｡⋆</text>
+        </svg>
+
+        <br><br>
+
+        <!-- Botões de Contato & Redes -->
         <p align="center">
-          <a href="https://github.com/amanda-r-mattos">
-            <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=F4A7B9&center=true&vCenter=true&width=480&lines=Software+Developer+🌸;Creating+cute+%26+meaningful+code+✨;Coffee%2C+Lo-Fi+%26+Clean+Architecture+☕;Welcome+to+my+cozy+corner+of+GitHub!+₊˚⊹" alt="Typing SVG" />
+          <a href="https://linkedin.com/in/amanda-r-mattos" target="_blank">
+            <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=f472b6" alt="LinkedIn" />
+          </a>
+          <a href="mailto:seu-email@exemplo.com" target="_blank">
+            <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=c084fc" alt="Email" />
+          </a>
+          <a href="https://github.com/amanda-r-mattos" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&color=38bdf8" alt="GitHub" />
           </a>
         </p>
 
-        <!-- Cute Status Badges -->
-        <p align="center">
-          <img src="https://img.shields.io/badge/Status-Coding%20with%20love-ffb6c1?style=for-the-badge&logo=heart&logoColor=white" />
-          <img src="https://img.shields.io/badge/Vibe-Lo--Fi%20%26%20Pastel-c8b6ff?style=for-the-badge&logo=coffee&logoColor=white" />
-          <img src="https://img.shields.io/badge/Focus-Fullstack%20%26%20UI%2FUX-b8c0ff?style=for-the-badge&logo=sparkles&logoColor=white" />
-        </p>
+        <br>
 
-        <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-      </div>
-
-      <hr />
-
-      <h3>🌸 <code>⋆｡°✩ Sobre Mim / About Me ✩°｡⋆</code></h3>
-
-      <div align="center">
-        <img align="right" width="220" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp1b3BocG82bXFocndzMGpxZ2E1anRpeXZ6Y2k0N2g4eGgxbWtxbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/L3U4QWz340w2W18aek/giphy.gif" alt="Cute aesthetic animation" />
-      </div>
-
-      <ul>
-        <li>🌷 <b>Atualmente focada em</b>: Criar soluções elegantes, acessíveis e com design refinado.</li>
-        <li>💡 <b>Interesses</b>: Desenvolvimento Web, Agentes de Ia,N8N, automação e arquitetura de software limpa.</li>
-        <li>☕ <b>Combustível diário</b>: Café quentinho, playlists relaxantes e resolver problemas complexos com linhas simples de código.</li>
-        <li>🌱 <b>Sempre aprendendo</b>: Novas tecnologias, boas práticas e aprimorando habilidades.</li>
-      </ul>
-
-      <br>
-
-      <div align="center">
-        <!-- Interactive Dropdown 1: Fun facts -->
+        <!-- Seção Interativa Retrátil -->
         <details>
-          <summary><b>✨ Clique aqui para ver 5 curiosidades sobre mim! ₍ᐢ.ˬ.⑅ᐢ₎</b></summary>
+          <summary><b>✨ Clique para ver curiosidades sobre mim! ₍ᐢ.ˬ.⑅ᐢ₎ 🌸</b></summary>
           <br>
           <table>
             <thead>
               <tr>
-                <th align="left">🌸 Curiosidade</th>
-                <th align="left">🍵 Detalhe</th>
+                <th align="left">🌸 Tópico</th>
+                <th align="left">🍵 Detalhes</th>
               </tr>
             </thead>
             <tbody>
@@ -143,37 +350,24 @@
               </tr>
               <tr>
                 <td>🐾 <b>Pet lover</b></td>
-                <td>Apaixonada por Cachorros e animais</td>
+                <td>Apaixonada por cachorros e animais</td>
               </tr>
               <tr>
                 <td>🎨 <b>Lado criativo</b></td>
-                <td>Adoro paletas em tons pastel, design minimalista e pixel art</td>
+                <td>Paletas em tons pastel, design minimalista e pixel art</td>
               </tr>
               <tr>
-                <td>📚 <b>Leituras</b></td>
-                <td>Livros sobre tecnologia, desenvolvimento pessoal e ficção</td>
+                <td>🚀 <b>Foco principal</b></td>
+                <td>Agentes de IA, automações com n8n e desenvolvimento Fullstack</td>
               </tr>
               <tr>
                 <td>🎯 <b>Meta atual</b></td>
-                <td>Contribuir ativamente em projetos open-source , construir apps incríveis  e trabalhar em desenvolvimento</td>
+                <td>Contribuir em projetos open-source e construir apps incríveis</td>
               </tr>
             </tbody>
           </table>
         </details>
 
-        <!-- Interactive Dropdown 2: Setup & Tools -->
-        <details>
-          <summary><b>💻 Meu Setup & Cozy Workspace ₍ᐢ.ˬ.⑅ᐢ₎</b></summary>
-          <br>
-          <ul style="text-align: left; display: inline-block;">
-            <li><b>Editor</b>: VS Code com tema pastel / Dark Modern e Antigravity</li>
-            <li><b>Terminal</b>: PowerShell  ✨</li>
-            <li><b>Design</b>: Figma, Canva & Framer para inspiração</li>
-            <li><b>Notas & Produtividade</b>: Notion, Obsidian & Spotify</li>
-          </ul>
-        </details>
-
-        <!-- Interactive Dropdown 3: Playlist / Vibe -->
         <details>
           <summary><b>🎧 Minha Cozy Coding Playlist (Vibe Check) ₍ᐢ.ˬ.⑅ᐢ₎</b></summary>
           <br>
@@ -183,112 +377,11 @@
   ⇄      ◃◃   ⅠⅠ   ▹▹      ↻
   Volume:  ▂▃▅▆▇ 100%</code></pre>
         </details>
-      </div>
-
-      <hr />
-
-      <h3>🎀 <code>⋆｡°✩ Minha Caixa de Ferramentas / Tech Stack ✩°｡⋆</code></h3>
-
-      <div align="center">
-        <!-- Compact Icons Bar -->
-        <p align="center">
-          <img src="https://skillicons.dev/icons?i=py,cpp,html,css,js,ts,react,nextjs,nodejs,express,supabase,postgres,git,github,vscode,docker,postman,figma" />
-        </p>
-
-        <h4>🤖 IA, Automação & Workflows</h4>
-        <p>
-          <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" />
-          <img src="https://img.shields.io/badge/Agentes_de_IA-8A2BE2?style=for-the-badge&logo=openai&logoColor=white" />
-          <img src="https://img.shields.io/badge/Python_Automation-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-        </p>
-
-        <h4>✨ Linguagens</h4>
-        <p>
-          <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-          <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-          <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-          <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-          <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-        </p>
-
-        <h4>🌸 Frontend & Backend</h4>
-        <p>
-          <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-          <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-          <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-          <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
-        </p>
-
-        <h4>🗄️ Banco de Dados & Backend as a Service</h4>
-        <p>
-          <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
-          <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-          <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
-        </p>
-
-        <h4>🌷 Ferramentas, Design & DevOps</h4>
-        <p>
-          <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-          <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-          <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-          <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
-          <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white" />
-          <img src="https://img.shields.io/badge/Framer-0055FF?style=for-the-badge&logo=framer&logoColor=white" />
-          <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-          <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
-        </p>
-      </div>
-
-      <hr />
-
-      <h3>📊 <code>⋆｡°✩ Estatísticas do GitHub / My Stats ✩°｡⋆</code></h3>
-
-      <div align="center">
-        <table>
-          <tr>
-            <td>
-              <img height="180em" src="https://github-readme-stats.vercel.app/api?username=amanda-r-mattos&show_icons=true&theme=catppuccin_mocha&bg_color=1e1e2e&title_color=f5c2e7&text_color=cdd6f4&icon_color=f38ba8&border_color=eba0ac&border_radius=12&hide_border=false" alt="Amanda's GitHub Stats" />
-            </td>
-            <td>
-              <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amanda-r-mattos&layout=compact&theme=catppuccin_mocha&bg_color=1e1e2e&title_color=f5c2e7&text_color=cdd6f4&border_color=eba0ac&border_radius=12&hide_border=false" alt="Top Languages" />
-            </td>
-          </tr>
-        </table>
 
         <br>
 
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=amanda-r-mattos&theme=catppuccin_mocha&background=1E1E2E&ring=F5C2E7&fire=F38BA8&currStreakNum=CDD6F4&sideNums=CDD6F4&currStreakLabel=F5C2E7&sideLabels=F5C2E7&dates=BAC2DE&border=EBA0AC&border_radius=12" alt="GitHub Streak" />
-      </div>
-
-      <hr />
-
-      <h3>💌 <code>⋆｡°✩ Vamos nos conectar? / Connect with me ✩°｡⋆</code></h3>
-
-      <div align="center">
-        <p>Sinta-se à vontade para me mandar uma mensagem, tirar dúvidas ou conversar sobre novos projetos!</p>
-
         <p align="center">
-          <a href="https://linkedin.com/in/amanda-r-mattos" target="_blank">
-            <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=f4a7b9" alt="LinkedIn" />
-          </a>
-          <a href="mailto:seu-email@exemplo.com" target="_blank">
-            <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=c8b6ff" alt="Email" />
-          </a>
-          <a href="https://instagram.com/" target="_blank">
-            <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&color=b8c0ff" alt="Instagram" />
-          </a>
-          <a href="https://github.com/amanda-r-mattos" target="_blank">
-            <img src="https://img.shields.io/badge/Portfolio-2ea44f?style=for-the-badge&logo=safari&logoColor=white&color=ffd6a5" alt="Portfolio" />
-          </a>
-        </p>
-
-        <br>
-
-        <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:fbc2eb,50:a6c1ee,100:fbc2eb&height=100&section=footer" width="100%" />
-
-        <p align="center">
-          <i>Feito com carinho e muito café ☕ 🌸 ⋆｡°✩</i>
+          <i>⋆｡°✩ Feito com carinho, café e código 🌸 ✨ ✩°｡⋆</i>
         </p>
       </div>
     </article>

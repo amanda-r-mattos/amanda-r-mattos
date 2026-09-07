@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1180" viewBox="0 0 900 1180" role="img" aria-labelledby="title desc">
+<title id="title">Perfil GitHub de Amanda Mattos</title>
+<desc id="desc">Painel animado com tecnologias, inteligência artificial, automação e projetos.</desc>
+<style>
+  text {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  .eyebrow { font-size: 12px; font-weight: 800; letter-spacing: 5px; fill: #f472b6; }
+  .name { font-size: 58px; font-weight: 900; letter-spacing: 3px; fill: #ffffff; }
+  .role { font-size: 15px; font-weight: 800; letter-spacing: 4px; fill: #c084fc; }
+  .bio { font-size: 13.5px; font-weight: 500; fill: #cbd5e1; }
+  .muted { font-size: 10px; font-weight: 700; letter-spacing: 2px; fill: #94a3b8; }
+  
+  .section-title { font-size: 12px; font-weight: 900; letter-spacing: 3.5px; fill: #f472b6; }
+  
+  .chip { fill: #1e1b4b; fill-opacity: 0.75; stroke-width: 1.2; stroke-opacity: 0.8; }
+  .chipText { font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+  
+  .panel { fill: #131127; fill-opacity: 0.9; stroke: #2e2854; stroke-width: 1.5; }
+  .panel-highlight { fill: #181530; stroke: #433878; }
+  
+  .card-title { font-size: 15px; font-weight: 800; fill: #fdf2f8; }
+  .card-desc { font-size: 11px; font-weight: 500; fill: #94a3b8; line-height: 1.4; }
+  .card-tag { font-size: 9px; font-weight: 800; fill: #f472b6; letter-spacing: 1.5px; }
+  
+  .stat-num { font-size: 26px; font-weight: 900; fill: #ffffff; }
+  .stat-label { font-size: 9px; font-weight: 800; letter-spacing: 1.5px; fill: #cbd5e1; }
+  
+  /* Animações Cute & Suaves */
+  .orbA { animation: floatOrbA 10s ease-in-out infinite; }
+  .orbB { animation: floatOrbB 12s ease-in-out infinite; }
+  .orbC { animation: floatOrbC 9s ease-in-out infinite; }
+  .pulse { animation: pulseGlow 2.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scan { animation: scanline 6s linear infinite; }
+  .sparkle { animation: sparkleTwinkle 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+
+  @keyframes floatOrbA {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(30px, -15px) scale(1.1); }
+  }
+  @keyframes floatOrbB {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-35px, 20px) scale(1.08); }
+  }
+  @keyframes floatOrbC {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(20px, 25px); }
+  }
+  @keyframes pulseGlow {
+    0%, 100% { transform: scale(1); opacity: 0.85; }
+    50% { transform: scale(1.45); opacity: 1; }
+  }
+  @keyframes scanline {
+    0% { transform: translateX(-400px); }
+    100% { transform: translateX(1100px); }
+  }
+  @keyframes sparkleTwinkle {
+    0%, 100% { opacity: 0.3; transform: scale(0.8) rotate(0deg); }
+    50% { opacity: 1; transform: scale(1.2) rotate(45deg); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; }
+  }
+</style>
+
+<defs>
+  <!-- Gradients -->
+  <radialGradient id="gradPink"><stop stop-color="#ec4899" stop-opacity="0.5"/><stop offset="1" stop-color="#ec4899" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gradPurple"><stop stop-color="#8b5cf6" stop-opacity="0.45"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gradCyan"><stop stop-color="#06b6d4" stop-opacity="0.35"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0"/></radialGradient>
+  
+  <linearGradient id="scanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#f472b6" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#c084fc" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- Cute Grid Pattern -->
+  <pattern id="cuteGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#6366f1" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="40" cy="40" r="1" fill="#f472b6" fill-opacity="0.25"/>
+  </pattern>
+</defs>
+
+<!-- Background Frame -->
+<rect width="900" height="1180" rx="28" fill="#0c0a18"/>
+<rect x="2" y="2" width="896" height="1176" rx="26" fill="url(#cuteGrid)" stroke="#312e81" stroke-opacity="0.6"/>
+
+<!-- Ambient Glowing Orbs -->
+<ellipse class="orbA" cx="220" cy="140" rx="260" ry="160" fill="url(#gradPink)"/>
+<ellipse class="orbB" cx="700" cy="170" rx="250" ry="150" fill="url(#gradPurple)"/>
+<ellipse class="orbC" cx="450" cy="420" rx="280" ry="160" fill="url(#gradCyan)"/>
+
+<!-- Scan Light Animation -->
+<rect class="scan" x="-300" y="110" width="300" height="48" fill="url(#scanGradient)"/>
+
+<!-- Sparkles / Cute Stars -->
+<g class="sparkle" style="transform-origin: 120px 80px;">
+  <path d="M120 70 L122 78 L130 80 L122 82 L120 90 L118 82 L110 80 L118 78 Z" fill="#fbcfe8"/>
+</g>
+<g class="sparkle" style="transform-origin: 780px 90px; animation-delay: 1.5s;">
+  <path d="M780 80 L782 88 L790 90 L782 92 L780 100 L778 92 L770 90 L778 88 Z" fill="#e9d5ff"/>
+</g>
+<g class="sparkle" style="transform-origin: 820px 280px; animation-delay: 0.8s;">
+  <path d="M820 272 L821.5 278 L828 280 L821.5 282 L820 288 L818.5 282 L812 280 L818.5 278 Z" fill="#fbcfe8"/>
+</g>
+
+<!-- ================= HEADER SECTION ================= -->
+<text x="450" y="65" text-anchor="middle" class="eyebrow">✨ AI AGENTS • FULLSTACK • AUTOMATION 🌸</text>
+<text x="450" y="135" text-anchor="middle" class="name">AMANDA MATTOS</text>
+<text x="450" y="172" text-anchor="middle" class="role">SOFTWARE DEVELOPER &amp; AI BUILDER</text>
+<text x="450" y="206" text-anchor="middle" class="bio">Criando soluções elegantes, fluxos inteligentes e interfaces memoráveis com código limpo.</text>
+<text x="450" y="232" text-anchor="middle" class="muted">☕ COZY WORKSPACE  •  github.com/amanda-r-mattos  •  LO-FI VIBES 🐾</text>
+
+<!-- ================= TECH CHIPS ================= -->
+<!-- Row 1: Languages & AI -->
+<g transform="translate(45, 265)">
+  <g><rect x="0" y="0" width="85" height="30" rx="15" class="chip" stroke="#ec4899"/><text x="42.5" y="19" text-anchor="middle" class="chipText" fill="#f472b6">PYTHON</text></g>
+  <g><rect x="95" y="0" width="85" height="30" rx="15" class="chip" stroke="#8b5cf6"/><text x="137.5" y="19" text-anchor="middle" class="chipText" fill="#c084fc">N8N</text></g>
+  <g><rect x="190" y="0" width="115" height="30" rx="15" class="chip" stroke="#ec4899"/><text x="247.5" y="19" text-anchor="middle" class="chipText" fill="#f472b6">AGENTES IA</text></g>
+  <g><rect x="315" y="0" width="75" height="30" rx="15" class="chip" stroke="#06b6d4"/><text x="352.5" y="19" text-anchor="middle" class="chipText" fill="#38bdf8">C++</text></g>
+  <g><rect x="400" y="0" width="95" height="30" rx="15" class="chip" stroke="#eab308"/><text x="447.5" y="19" text-anchor="middle" class="chipText" fill="#facc15">JAVASCRIPT</text></g>
+  <g><rect x="505" y="0" width="95" height="30" rx="15" class="chip" stroke="#3b82f6"/><text x="552.5" y="19" text-anchor="middle" class="chipText" fill="#60a5fa">TYPESCRIPT</text></g>
+  <g><rect x="610" y="0" width="95" height="30" rx="15" class="chip" stroke="#f97316"/><text x="657.5" y="19" text-anchor="middle" class="chipText" fill="#fb923c">HTML5 / CSS</text></g>
+  <g><rect x="715" y="0" width="95" height="30" rx="15" class="chip" stroke="#10b981"/><text x="762.5" y="19" text-anchor="middle" class="chipText" fill="#34d399">SUPABASE</text></g>
+</g>
+
+<!-- Divider -->
+<line x1="45" y1="318" x2="855" y2="318" stroke="#2e2854" stroke-width="1.2"/>
+
+<!-- ================= 4 METRIC / STATUS CARDS ================= -->
+<g transform="translate(45, 335)">
+  <!-- Card 1 -->
+  <g transform="translate(0, 0)">
+    <rect width="190" height="98" rx="16" class="panel"/>
+    <circle cx="24" cy="26" r="4.5" fill="#f472b6" class="pulse"/>
+    <text x="36" y="29" class="stat-label" fill="#f472b6">FOCO ATUAL</text>
+    <text x="20" y="65" class="card-title">Fullstack &amp; IA</text>
+    <text x="20" y="83" class="card-desc">Automação &amp; Web Apps</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(206, 0)">
+    <rect width="190" height="98" rx="16" class="panel"/>
+    <circle cx="24" cy="26" r="4.5" fill="#c084fc" class="pulse"/>
+    <text x="36" y="29" class="stat-label" fill="#c084fc">WORKFLOWS</text>
+    <text x="20" y="65" class="card-title">N8N + Python</text>
+    <text x="20" y="83" class="card-desc">Agentes Inteligentes</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(412, 0)">
+    <rect width="190" height="98" rx="16" class="panel"/>
+    <circle cx="24" cy="26" r="4.5" fill="#38bdf8" class="pulse"/>
+    <text x="36" y="29" class="stat-label" fill="#38bdf8">DATABASE &amp; BAAS</text>
+    <text x="20" y="65" class="card-title">Supabase &amp; SQL</text>
+    <text x="20" y="83" class="card-desc">PostgreSQL &amp; APIs</text>
+  </g>
+
+  <!-- Card 4 -->
+  <g transform="translate(618, 0)">
+    <rect width="192" height="98" rx="16" class="panel"/>
+    <circle cx="24" cy="26" r="4.5" fill="#34d399" class="pulse"/>
+    <text x="36" y="29" class="stat-label" fill="#34d399">UI/UX &amp; DESIGN</text>
+    <text x="20" y="65" class="card-title">Figma &amp; Framer</text>
+    <text x="20" y="83" class="card-desc">Cute &amp; Clean Design</text>
+  </g>
+</g>
+
+<!-- ================= MAIN FOCUS / AREAS SECTION ================= -->
+<text x="45" y="475" class="section-title">🌸 PILARES DE DESENVOLVIMENTO &amp; EXPERTISE</text>
+
+<!-- Pillar 1: Agentes de IA & Automação -->
+<g transform="translate(45, 495)">
+  <rect width="810" height="110" rx="18" class="panel panel-highlight"/>
+  <rect x="18" y="18" width="40" height="40" rx="12" fill="#ec4899" fill-opacity="0.2" stroke="#ec4899" stroke-width="1.2"/>
+  <text x="38" y="44" text-anchor="middle" font-size="20">🤖</text>
+  
+  <text x="75" y="38" class="card-title">Inteligência Artificial &amp; Automação de Processos</text>
+  <text x="75" y="55" class="card-tag">N8N • PYTHON AGENTS • LLMS • OPENAI • GEMINI</text>
+  <text x="75" y="78" class="card-desc">Construção de pipelines autônomos, integrações via Webhooks e bots com processamento de linguagem natural.</text>
+  <text x="75" y="96" class="card-desc" fill="#c084fc">✨ Foco em produtividade, automação de tarefas e arquitetura escalável.</text>
+</g>
+
+<!-- Pillar 2: Frontend & Experiências Visuais -->
+<g transform="translate(45, 620)">
+  <rect width="810" height="110" rx="18" class="panel panel-highlight"/>
+  <rect x="18" y="18" width="40" height="40" rx="12" fill="#8b5cf6" fill-opacity="0.2" stroke="#8b5cf6" stroke-width="1.2"/>
+  <text x="38" y="44" text-anchor="middle" font-size="20">💻</text>
+  
+  <text x="75" y="38" class="card-title">Desenvolvimento Frontend Moderno &amp; Design</text>
+  <text x="75" y="55" class="card-tag">REACT • NEXT.JS • TYPESCRIPT • FIGMA • FRAMER</text>
+  <text x="75" y="78" class="card-desc">Criação de interfaces web responsivas, intuitivas e esteticamente refinadas com componentes reutilizáveis.</text>
+  <text x="75" y="96" class="card-desc" fill="#f472b6">🌸 Atenção aos detalhes, micro-interações, acessibilidade e harmonia de cores.</text>
+</g>
+
+<!-- Pillar 3: Backend, APIs & Dados -->
+<g transform="translate(45, 745)">
+  <rect width="810" height="110" rx="18" class="panel panel-highlight"/>
+  <rect x="18" y="18" width="40" height="40" rx="12" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="1.2"/>
+  <text x="38" y="44" text-anchor="middle" font-size="20">⚙️</text>
+  
+  <text x="75" y="38" class="card-title">Backend, Banco de Dados &amp; Integrações</text>
+  <text x="75" y="55" class="card-tag">NODE.JS • EXPRESS • SUPABASE • POSTGRESQL • DOCKER • POSTMAN</text>
+  <text x="75" y="78" class="card-desc">Desenvolvimento de APIs RESTful, gerenciamento de banco de dados relacional e serviços em nuvem.</text>
+  <text x="75" y="96" class="card-desc" fill="#38bdf8">🚀 Estruturas robustas, seguras e prontas para integração contínua.</text>
+</g>
+
+<!-- ================= COZY WORKSPACE & SETUP ================= -->
+<text x="45" y="895" class="section-title">🍵 COZY ENVIRONMENT &amp; FERRAMENTAS FAVORITAS</text>
+
+<g transform="translate(45, 915)">
+  <!-- Tool 1 -->
+  <g transform="translate(0, 0)">
+    <rect width="258" height="85" rx="16" class="panel"/>
+    <text x="20" y="35" class="card-title">🎨 IDE &amp; Workspace</text>
+    <text x="20" y="56" class="card-desc">VS Code • Antigravity</text>
+    <text x="20" y="72" class="card-desc" fill="#f472b6">PowerShell ✨ • Dark Cute Theme</text>
+  </g>
+
+  <!-- Tool 2 -->
+  <g transform="translate(276, 0)">
+    <rect width="258" height="85" rx="16" class="panel"/>
+    <text x="20" y="35" class="card-title">💡 Design &amp; Criação</text>
+    <text x="20" y="56" class="card-desc">Figma • Canva • Framer</text>
+    <text x="20" y="72" class="card-desc" fill="#c084fc">Paletas Pastel &amp; Prototipagem</text>
+  </g>
+
+  <!-- Tool 3 -->
+  <g transform="translate(552, 0)">
+    <rect width="258" height="85" rx="16" class="panel"/>
+    <text x="20" y="35" class="card-title">📚 Organização &amp; Foco</text>
+    <text x="20" y="56" class="card-desc">Notion • Obsidian • Spotify</text>
+    <text x="20" y="72" class="card-desc" fill="#34d399">Lo-Fi Beats &amp; Warm Coffee ☕</text>
+  </g>
+</g>
+
+<!-- ================= FOOTER / SIGNATURE ================= -->
+<g transform="translate(45, 1030)">
+  <rect width="810" height="90" rx="18" fill="#181432" stroke="#37306b" stroke-width="1.2"/>
+  <circle cx="45" cy="45" r="18" fill="#ec4899" fill-opacity="0.2"/>
+  <text x="45" y="52" text-anchor="middle" font-size="18">💌</text>
+  
+  <text x="80" y="40" class="card-title">Sempre aberta a colaborações, novos projetos e conexões!</text>
+  <text x="80" y="62" class="card-desc">Entre em contato para conversarmos sobre tecnologia, desenvolvimento ou automação com IA ₍ᐢ.ˬ.⑅ᐢ₎</text>
+</g>
+
+<!-- Little Cute Quote -->
+<text x="450" y="1155" text-anchor="middle" font-size="11" font-weight="600" fill="#94a3b8">⋆｡°✩ Feito com carinho, café e código 🌸 ✨ ✩°｡⋆</text>
+
+</svg>
