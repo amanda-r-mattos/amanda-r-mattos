@@ -6,7 +6,7 @@
   <br><br>
 
   <!-- Painel Principal SVG Animado (Estilo AlexLimaTKZ + Cute / Pastel Aesthetic) -->
-  <img src="./.github/assets/profile.svg" alt="Painel do perfil de Amanda Mattos" width="100%" />
+  <img src="https://raw.githubusercontent.com/amanda-r-mattos/amanda-r-mattos/main/.github/assets/profile.svg" alt="Painel do perfil de Amanda Mattos" width="100%" />
 
   <br><br>
 
