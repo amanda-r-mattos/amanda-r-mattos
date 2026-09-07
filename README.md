@@ -12,14 +12,11 @@
 
   <!-- Botões de Contato & Redes -->
   <p align="center">
-    <a href="https://linkedin.com/in/amanda-r-mattos" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=f472b6" alt="LinkedIn" />
-    </a>
-    <a href="mailto:seu-email@exemplo.com" target="_blank">
-      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=c084fc" alt="Email" />
+    <a href="mailto:amandalaryssarodrigues@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=f472b6" alt="Email" />
     </a>
     <a href="https://github.com/amanda-r-mattos" target="_blank">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&color=38bdf8" alt="GitHub" />
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&color=c084fc" alt="GitHub" />
     </a>
   </p>
 
